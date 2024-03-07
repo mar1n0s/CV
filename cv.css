@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body{
+  background-color: #949494;
+}
+hr{
+  margin: 20px;
+}
+.header{
+  margin: 20px 200px 20px 200px;
+  background-color:#ededed;
+  border-bottom: 2px solid #ff9c00;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+img{
+  height: 120px;
+  border-radius: 60px;
+  margin: 20px 0 20px 80px; 
+}
+.cv-name{
+  margin: 0 0 0 100px;
+  line-height: 2.2rem;
+}
+.name{
+  font-size: 32px;
+  font-weight: 600;
+  font-style: oblique;
+}
+.title{
+  font-size: 18px;
+  font-style: italic;
+}
+.cv-download{
+  margin: 0 150px 0 50px;
+}
+a{
+  text-decoration: none;
+  color: rgb(93, 91, 91);
+  transition: opacity 0.1s;
+}
+a:hover{
+  opacity: 0.7;
+}
+@media only screen and (max-width: 1080px) {
+  .header,.main-section{
+    width: 80%;
+    transform: translateX(-150px);
+    padding-right: 100px;
+  }
+  .header, .cv-name{
+   justify-content: center;
+   padding: 10px;
+  }
+  .cv-name{
+    margin-right: 50px;
+  }
+   .cv-download{
+    padding-left: 70px;
+   }
+  img{
+    display: none;
+  }
+  hr{
+    width: 100%;
+    margin-left: 50px;
+  }
+  .info, .list-computer, .jobs{
+    margin-left: 40px;
+  }
+}
+.main-section{
+  background-color:#ededed;
+  margin: -20px 200px 0 200px;
+  height: 1580px;
+}
+.personal-info{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px 0 0 20px;
+}
+h2{
+  color:#ff9c00;
+  font-style: italic;
+  font-size: 1.5rem;
+  padding-left: 100px;
+  padding-bottom: 20px; 
+}
+li{
+  font-weight: 600;
+}
+.info{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5rem;
+  padding-left: 60px;
+}
+.study, .languages, .computer-knowledge, .job-experience, .diafora{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+}
+.list-study, .list-language, .diafora-list{
+  padding-left: 100px;
+  line-height: 1.5em;
+}
+.list-computer{
+  padding-left: 60px;
+  line-height: 1.5em;
+}
+.jobs{
+  padding-left: 30px;
+  line-height: 1.5em;
+}
